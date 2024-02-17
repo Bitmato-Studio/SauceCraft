@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauce Craft</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="header">Sauce Craft</div>
+    <div id="matoBalance">5000 MATO</div>
+    
+    <div class="container">
+        <div id="costContainer" class="box">
+            <label for="sauceSelection">Select Sauce to Produce:</label>
+            <select id="sauceSelection">
+                <option value="ketchup">Ketchup - 10 MATO</option>
+                <option value="canned">Canned Salsa - 15 MATO</option>
+                <option value="paste">Tomato Paste - 8 MATO</option>
+                <option value="toppings">Pizza Toppings - 12 MATO</option>
+            </select>
+        </div>
+        
+        <div id="animationWindow" class="box">
+            <!-- Animation or progress bars will go here -->
+        </div>
+        
+        <div id="marketPriceContainer" class="box">
+            <div>Current Prices:</div>
+            <ul class="priceList">
+                <li id="valueKetchup">Ketchup - Value: <span class="value">12</span> MATO</li>
+                <li id="valueCanned">Canned Salsa - Value: <span class="value">15</span> MATO</li>
+                <li id="valuePaste">Tomato Paste - Value: <span class="value">8</span> MATO</li>
+                <li id="valueToppings">Pizza Toppings - Value: <span class="value">12</span> MATO</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="productionQueue" class="box">
+        <!-- Production queue bars will be dynamically updated here -->
+    </div>
+    
+    <div id="leaderboard" class="box">
+        <!-- Leaderboard content will be dynamically updated here -->
+    </div>
+    
+    <div id="actions">
+        <button id="buyMato">Buy more MATO</button>
+        <button id="sellProducts">Sell products</button>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
